@@ -1,0 +1,57 @@
+{
+    "Layer1":{
+        "Name": "BASE",
+        "Type": "Category",
+        "Path": "ParsedAssets/models/Base",
+        "Chance" :"1.0",
+        "AssetProbabilities": "Evens"
+    },
+    "Layer2" : {
+        "Name": "EYES",
+        "Type": "Category",
+        "Path": "ParsedAssets/models/Eyes",
+        "Chance" :"1.0",
+        "AssetProbabilities": "Evens"
+    },
+    "Layer3":{
+        "Name": "OUTFIT",
+        "Type": "Category",
+        "Path": "ParsedAssets/models/Outfit",
+        "Chance" :"0.9",
+        "AssetProbabilities": "Evens"
+    },
+    "Layer4" : {
+        "Name": "PANTS",
+        "Type": "Category",
+        "Path": "ParsedAssets/models/Pants",
+        "Chance" :"0.9",
+        "AssetProbabilities": "Evens"
+    },
+    "Layer5":{
+        "Name": "SHOES",
+        "Type": "Category",
+        "Path": "ParsedAssets/models/Shoes",
+        "Chance" :"0.9",
+        "AssetProbabilities": "Evens"
+    },
+    "Layer6":{
+        "Name": "HEAD",
+        "Type": "Nested",
+        "Chance":"1.0",
+        "CategoryProbabilities":"[0.9,0.1]",
+        "SubCategories": [{
+            "Name": "HAIR",
+            "Type": "Category",
+            "Path": "ParsedAssets/models/Hair",
+            "Chance" :"0.9",
+            "AssetProbabilities": "Evens"
+        },
+        {
+            "Name": "HAT",
+            "Type": "Category",
+            "Path": "ParsedAssets/models/Hat",
+            "Chance" :"1.0",
+            "AssetProbabilities": "[0.8,0.2]"
+        }]
+    }
+}

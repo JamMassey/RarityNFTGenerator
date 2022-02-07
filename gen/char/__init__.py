@@ -1,0 +1,1 @@
+from .char import CharacterGenerator
