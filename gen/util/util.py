@@ -20,7 +20,6 @@ def format_number(num):
         return '-' + val
     return val
 
-#Needs vectorising
 def overlay(base, overlay):
     for j in range(base.size[1]):
         for i in range(base.size[0]):
